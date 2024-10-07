@@ -1,9 +1,9 @@
-const mario = document.getElementById("mario")
-const flower = document.getElementById("flower")
+const mario = document.getElementById("mario");
+const flower = document.getElementById("flower");
 
 document.addEventListener("keydown", function(event) {
     jump();
-})
+});
 
 function jump () {
     if(mario.classList != "jump") {
