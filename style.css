@@ -1,0 +1,55 @@
+.game {
+    height: 600px;
+    width: auto;
+    border-bottom: 5px solid green;
+}
+
+#mario {
+    width: 50px;
+    height: 80px;
+    background-image: url(img/mario.png);
+    background-size: 50px 80px;
+    position: relative;
+    top: 520px;
+}
+
+#flower {
+    width: 40px;
+    height: 65px;
+    background-image: url(img/Flower.png);
+    background-size: 40px 65px;
+    position: relative;
+    top: 462px;
+    margin-left: auto;
+    animation: FlowerMow 2s infinite linear;
+} 
+
+@keyframes FlowerMow {
+    0% {
+        margin-left: 100%;
+    }
+    100% { 
+        margin-left: -40px;
+    }
+}
+
+.jump {
+    animation: Jump 0.35s linear;
+}
+@keyframes Jump {
+    0% {
+        top: 520px;
+    }
+    30% {
+       top: 480px; 
+    }
+    50% {
+        top: 440px;
+    }
+    80% {
+        top: 480px;
+    }
+    100% { 
+        top: 520px;
+    }
+}
